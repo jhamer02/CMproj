@@ -28,6 +28,7 @@ WeatherObject   *mWeatherObject;
     stNewURL                    = [stNewURL stringByAppendingString:stLat];
     stNewURL                    = [stNewURL stringByAppendingString:@"&lon="];
     stNewURL                    = [stNewURL stringByAppendingString:stLng];
+    stNewURL                    = [stNewURL stringByAppendingString:@"&APPID=4266be5cf3f88c6ae6ffdc5ce7808324"];
     
     return [self sendRequest:stNewURL forData:stData andMode:nGET];
 }
